@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-dream-app';
+
+  title = 'Bytebank';
+  transferencia: any;
+
+  transferir($event: any){
+    console.log($event)
+    this.transferencia = $event;
+  }
+
 }
